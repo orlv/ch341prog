@@ -340,7 +340,7 @@ int32_t ch341SpiRead(uint8_t *buf, uint32_t add, uint32_t len)
     uint32_t tmp, pkg_len, pkg_count;
     struct libusb_transfer *xferBulkIn, *xferBulkOut;
     uint32_t idx = 0;
-    uint32_t ret;
+    int32_t ret;
     int32_t old_counter;
     struct timeval tv = {0, 100};
 
@@ -417,7 +417,7 @@ int32_t ch341SpiWrite(uint8_t *buf, uint32_t add, uint32_t len)
     uint32_t tmp, pkg_count;
     struct libusb_transfer *xferBulkIn, *xferBulkOut;
     uint32_t idx = 0;
-    uint32_t ret;
+    int32_t ret;
     int32_t old_counter;
     struct timeval tv = {0, 100};
 
